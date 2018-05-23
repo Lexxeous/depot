@@ -11,8 +11,8 @@
     <td class="list_description">
       <dl>
         <dt><%= product.title %></dt>
-        <dd><%= truncate(strip_tags(product.description), length: 1000) %></dd>
-        <dd><%= number_to_currency(product.price) %></dd>
+        <dd><%= sanitize(product.description) %></dd>
+        <dd class="price"><%= number_to_currency(product.price) %></dd>
       </dl> 
     </td>
     <td class="list_actions">

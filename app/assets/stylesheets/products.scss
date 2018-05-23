@@ -6,8 +6,15 @@
 {
 	table 
 	{
-		width: 100%
-		//border-collapse: collapse;
+		border-collapse: collapse;
+	}
+	h1
+	{
+		margin: 0;
+		padding-bottom: 0.5em;
+		font: 200% sans-serif;
+		color: black;
+		border-bottom: 1px dotted #77D
 	}
 }
 
@@ -15,28 +22,27 @@ table tr td
 {
 	padding: 5px;
 	vertical-align: top;
-	border: 2px solid black;
-	text-align: center;
+	height: 120px;
+	//border: 2px solid black;
 }
 
 .list_image
 {
 	width: 96px;
 	hight: 112px;
-	border: 2px solid black;
+	//border: 2px solid black;
 }
 
 .list_description
 {
 	width: 60%;
-	text-align: left;
 	dl
 	{
 		margin: 0;
 	}
 	dt
 	{
-		color: #244;
+		color: #77D;
 		font-weight: bold;
 		font-size: larger;
 	}
@@ -55,10 +61,23 @@ table tr td
 
 .list_line_even
 {
-	background: #e0f8f8;
+	//background: #ffffff; //white
 }
 
 .list_line_odd
 {
-	background: #f8b0f8;
+	//background: #d3d3d3; //light grey
+}
+
+.list_line_odd, .list_line_even
+{
+	overflow: auto;
+	margin-top: 1em;
+	border-bottom: 1px dotted #77D;
+	min-height: 100px;
+}
+
+.price
+{
+	font-weight: bold;
 }
