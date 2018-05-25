@@ -64,4 +64,4 @@ Product.create(title: 'Agile Web Development with Rails 5',
       that you think!
       </p>",
   image_url: 'rails5.jpg',
-price: 40)
+price: 1000000000)
