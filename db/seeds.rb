@@ -8,6 +8,8 @@
 
 User.delete_all
 Order.delete_all
+Cart.delete_all
+LineItem.delete_all
 Product.delete_all
 
 #...
