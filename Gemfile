@@ -28,16 +28,16 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
+
+gem 'nokogiri', '~> 1.8.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-
-gem 'bcrypt', '~> 3.1.7'
 
 group :production do
   gem 'mysql2', '~> 0.4.0'
