@@ -6,8 +6,43 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+User.delete_all
+Order.delete_all
 Product.delete_all
+
 #...
+
+User.create(name: 'Alex',
+            password: 'password',
+            password_confirmation: 'password')
+
+
+Order.create(name: 'Dave',
+            address: '1234 Dave Road',
+            email: 'dave@example.org',
+            pay_type: 'Check')
+
+Order.create(name: 'Steve',
+            address: '5678 Steve Blvd',
+            email: 'steve@example.net',
+            pay_type: 'Purchase Order')
+
+Order.create(name: 'John',
+            address: '6969 John Street',
+            email: 'john@example.com',
+            pay_type: 'Debit Card')
+
+Order.create(name: 'Paul',
+            address: '42 Paul Circle',
+            email: 'paul@example.io',
+            pay_type: 'Credit Card')
+
+Order.create(name: 'Alex',
+            address: '140 Upper Station Camp Creek Road, Gallatin TN, 37066',
+            email: 'agibson@gibsonsua.net',
+            pay_type: 'Check')
+
+
 Product.create(title: 'Seven Mobile Apps in Seven Weeks',
   description:
     "<p>
