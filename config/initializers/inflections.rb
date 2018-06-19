@@ -14,3 +14,13 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym 'RESTful'
 # end
+
+# Could place a unchanging inflection as a model definition:
+# class Sheep < ApplicationRecord 
+#   self.table_name = "sheep"
+# end
+
+ActiveSupport::Inflector.inflections(:en) do |inflect| 
+	inflect.irregular 'tax', 'taxes'
+	inflect.irregular 'sheep', 'sheep'
+end
