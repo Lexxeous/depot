@@ -3,7 +3,7 @@ mig_name = Rails.root.join("db/migrate").children.map { |i| [i.to_s[52..100]] }
 mig_num = Rails.root.join("db/migrate").children.count
 namespace :db do
   desc "Prints the ordered migration versions"
-  task :schema_migrations => :environment do
+  task schema_migrations: :environment do
   	puts "\n", "There are #{mig_num} migrations created for this application."
   	puts "Run 'rake db:migrate:status' to view the direction status of each.", "\n"
   	for k in 0...mig_num
