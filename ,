@@ -1,0 +1,162 @@
+digraph yard {
+  graph [rankdir=BT rank=sink outputMode=nodesfirst packMode="graph" splines=true];
+  node [shape=record rank=sink rankType=sink];
+  Root [label="{root root||}" rank=sink];
+  Cart [label="{class Cart||+ \#add_product\l+ \#total_price\l}" rank=sink];
+  subgraph cluster_Cart {
+    label = "Cart"; labelloc=b;
+  }
+  Cart -> ApplicationRecord;
+  User [label="{class User||}" rank=sink];
+  subgraph cluster_User {
+    label = "User"; labelloc=b;
+  }
+  User -> ApplicationRecord;
+  Error [label="{class Error||}" rank=sink];
+  subgraph cluster_Error {
+    label = "Error"; labelloc=b;
+  }
+  Error -> StandardError;
+  Order [label="{class Order||+ \#add_line_items_from_cart\l}" rank=sink];
+  subgraph cluster_Order {
+    label = "Order"; labelloc=b;
+  }
+  Order -> ApplicationRecord;
+  Product [label="{class Product||+ latest\l}" rank=sink];
+  subgraph cluster_Product {
+    label = "Product"; labelloc=b;
+  }
+  Product -> ApplicationRecord;
+  LineItem [label="{class LineItem||+ \#total_price\l}" rank=sink];
+  subgraph cluster_LineItem {
+    label = "LineItem"; labelloc=b;
+  }
+  LineItem -> ApplicationRecord;
+  ApplicationJob [label="{class ApplicationJob||}" rank=sink];
+  subgraph cluster_ApplicationJob {
+    label = "ApplicationJob"; labelloc=b;
+  }
+  ApplicationJob -> ActiveJob_Base;
+  OrderMailer [label="{class OrderMailer||+ \#received\l+ \#shipped\l}" rank=sink];
+  subgraph cluster_OrderMailer {
+    label = "OrderMailer"; labelloc=b;
+  }
+  OrderMailer -> ApplicationMailer;
+  ApplicationRecord [label="{class ApplicationRecord||}" rank=sink];
+  subgraph cluster_ApplicationRecord {
+    label = "ApplicationRecord"; labelloc=b;
+  }
+  ApplicationRecord -> ActiveRecord_Base;
+  ApplicationMailer [label="{class ApplicationMailer||}" rank=sink];
+  subgraph cluster_ApplicationMailer {
+    label = "ApplicationMailer"; labelloc=b;
+  }
+  ApplicationMailer -> ActionMailer_Base;
+  AdminController [label="{class AdminController||+ \#index\l}" rank=sink];
+  subgraph cluster_AdminController {
+    label = "AdminController"; labelloc=b;
+  }
+  AdminController -> ApplicationController;
+  CartsController [label="{class CartsController||+ \#create\l+ \#destroy\l+ \#edit\l+ \#index\l+ \#new\l+ \#show\l+ \#update\l}" rank=sink];
+  subgraph cluster_CartsController {
+    label = "CartsController"; labelloc=b;
+  }
+  CartsController -> ApplicationController;
+  StoreController [label="{class StoreController||+ \#index\l}" rank=sink];
+  subgraph cluster_StoreController {
+    label = "StoreController"; labelloc=b;
+  }
+  StoreController -> ApplicationController;
+  UsersController [label="{class UsersController||+ \#create\l+ \#destroy\l+ \#edit\l+ \#index\l+ \#new\l+ \#show\l+ \#update\l}" rank=sink];
+  subgraph cluster_UsersController {
+    label = "UsersController"; labelloc=b;
+  }
+  UsersController -> ApplicationController;
+  OrdersController [label="{class OrdersController||+ \#create\l+ \#destroy\l+ \#edit\l+ \#index\l+ \#new\l+ \#show\l+ \#update\l}" rank=sink];
+  subgraph cluster_OrdersController {
+    label = "OrdersController"; labelloc=b;
+  }
+  OrdersController -> ApplicationController;
+  ProductsController [label="{class ProductsController||+ \#create\l+ \#destroy\l+ \#edit\l+ \#index\l+ \#new\l+ \#show\l+ \#update\l+ \#who_bought\l}" rank=sink];
+  subgraph cluster_ProductsController {
+    label = "ProductsController"; labelloc=b;
+  }
+  ProductsController -> ApplicationController;
+  SessionsController [label="{class SessionsController||+ \#create\l+ \#destroy\l+ \#new\l}" rank=sink];
+  subgraph cluster_SessionsController {
+    label = "SessionsController"; labelloc=b;
+  }
+  SessionsController -> ApplicationController;
+  LineItemsController [label="{class LineItemsController||+ \#create\l+ \#destroy\l+ \#edit\l+ \#index\l+ \#new\l+ \#show\l+ \#update\l}" rank=sink];
+  subgraph cluster_LineItemsController {
+    label = "LineItemsController"; labelloc=b;
+  }
+  LineItemsController -> ApplicationController;
+  ApplicationController [label="{class ApplicationController||}" rank=sink];
+  subgraph cluster_ApplicationController {
+    label = "ApplicationController"; labelloc=b;
+  }
+  ApplicationController -> ActionController_Base;
+  ProductsChannel [label="{class ProductsChannel||+ \#subscribed\l}" rank=sink];
+  subgraph cluster_ProductsChannel {
+    label = "ProductsChannel"; labelloc=b;
+  }
+  ProductsChannel -> ActionCable_Channel_Base;
+  subgraph cluster_ {
+    label = ""; labelloc=b;
+    AdminHelper [label="{module AdminHelper||}" rank=sink];
+    subgraph cluster_AdminHelper {
+      label = "AdminHelper"; labelloc=b;
+    }
+    CartsHelper [label="{module CartsHelper||}" rank=sink];
+    subgraph cluster_CartsHelper {
+      label = "CartsHelper"; labelloc=b;
+    }
+    StoreHelper [label="{module StoreHelper||}" rank=sink];
+    subgraph cluster_StoreHelper {
+      label = "StoreHelper"; labelloc=b;
+    }
+    UsersHelper [label="{module UsersHelper||}" rank=sink];
+    subgraph cluster_UsersHelper {
+      label = "UsersHelper"; labelloc=b;
+    }
+    OrdersHelper [label="{module OrdersHelper||}" rank=sink];
+    subgraph cluster_OrdersHelper {
+      label = "OrdersHelper"; labelloc=b;
+    }
+    ProductsHelper [label="{module ProductsHelper||}" rank=sink];
+    subgraph cluster_ProductsHelper {
+      label = "ProductsHelper"; labelloc=b;
+    }
+    SessionsHelper [label="{module SessionsHelper||}" rank=sink];
+    subgraph cluster_SessionsHelper {
+      label = "SessionsHelper"; labelloc=b;
+    }
+    LineItemsHelper [label="{module LineItemsHelper||}" rank=sink];
+    subgraph cluster_LineItemsHelper {
+      label = "LineItemsHelper"; labelloc=b;
+    }
+    ApplicationHelper [label="{module ApplicationHelper||+ \#hidden_div_if\l}" rank=sink];
+    subgraph cluster_ApplicationHelper {
+      label = "ApplicationHelper"; labelloc=b;
+    }
+    CurrentCart [label="{module CurrentCart||}" rank=sink];
+    subgraph cluster_CurrentCart {
+      label = "CurrentCart"; labelloc=b;
+    }
+    ApplicationCable [label="{module ApplicationCable||}" rank=sink];
+    ApplicationCable_Channel [label="{class Channel||}" rank=sink];
+    subgraph cluster_ApplicationCable_Channel {
+      label = "Channel"; labelloc=b;
+    }
+    ApplicationCable_Channel -> ActionCable_Channel_Base;
+    ApplicationCable_Connection [label="{class Connection||}" rank=sink];
+    subgraph cluster_ApplicationCable_Connection {
+      label = "Connection"; labelloc=b;
+    }
+    ApplicationCable_Connection -> ActionCable_Connection_Base;
+    subgraph cluster_ApplicationCable {
+      label = "ApplicationCable"; labelloc=b;
+    }
+  }
+}

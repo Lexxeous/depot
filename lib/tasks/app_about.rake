@@ -5,5 +5,4 @@ namespace :app do
   			 "& David Heinemeier Hansson from:"
   	puts "https://pragprog.com/book/rails5/agile-web-development-with-rails-5"
   end
-
 end
