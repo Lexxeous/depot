@@ -7,8 +7,8 @@ class OrdersController < ApplicationController
 
   # GET /orders
   # GET /orders.json
-  def index
-    @orders = Order.all
+  def index   
+    @orders = Order.order('created_at desc').page(params[:page])
   end
 
   # GET /orders/1

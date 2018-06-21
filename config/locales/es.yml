@@ -38,6 +38,7 @@ es:
       questions: "Preguntas"
       news: "Noticias"
       contact: "Contacto"
+      login: "Iniciar Sesión"
   store:
     index:
       title_html: "Su Cat&aacute;logo de Pragmatic"

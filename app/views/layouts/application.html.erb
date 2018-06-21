@@ -33,10 +33,11 @@
 			</div>
 
 			<ul>
-				<li><a href="http://www...."><%= t('.home') %></a></li>
-				<li><a href="http://www..../faq"><%= t('.questions') %></a></li>
+				<li><%= link_to t('.home'), store_index_path %></li>
+				<li><a href="http://www..../faqs"><%= t('.questions') %></a></li>
 				<li><a href="http://www..../news"><%= t('.news') %></a></li>
 				<li><a href="http://www..../contact"><%= t('.contact') %></a></li>
+				<li><%= link_to t('.login'), login_path %></li>
 			</ul>
 
 			<% if session[:user_id] %>
