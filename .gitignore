@@ -23,5 +23,3 @@ _DS.Store
 /yarn-error.log
 
 .byebug_history
-
-/extras/src/*

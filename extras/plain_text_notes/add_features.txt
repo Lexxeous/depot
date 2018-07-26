@@ -1,0 +1,25 @@
+[Add Features to Depot Application]
+
+  [EASY]
+    * Rubocop everything.
+    * Fix "Sorry translation not available." error message.
+    * Put a hidden link directing to the "/admin" page
+    * Convert html.erb files to html.haml...cuz HTML sucks compared to HAML.
+    * Make a scaffold for faqs, news, and contact.
+      1: Create proper links for each in "app/views/layouts/application.html.erb".
+
+  [MEDIUM]
+    * Make a proper README.
+    * Try to find ways to expand the functionality of the application.
+    * Finish converting from English to Spanish on all pages.
+      1: One in particular is the "/login" page.
+      2: This is under "app/views/sessions/new.html.erb".
+      3: Also work on adding a third language; if you want it to be German, so be it.
+    * Finish beautifying scripts & write custom scripts.
+    * Add a per_page: argument to the orders pagination.
+
+  [HARD]
+    * Go back through book and do extra additional challenges at end of chapters.
+    * Make Phusion Passenger and Apache devprod stuff work.
+    * Address ERROR: Subscription class not found: "ProductsChannel" when starting server.
+      1: Referring to "ActionCable.server.broadcast".

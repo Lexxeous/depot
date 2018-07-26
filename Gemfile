@@ -41,6 +41,8 @@ gem "jquery-ui-rails"
 gem "haml"
 # Use Kaminari for pagination framework
 gem "kaminari"
+# Use pry for debugging
+gem "pry"
 # Commented gems:------------------------------------------------------------------------------------------------
 # Grouped gems:------------------------------------------------------------------------------------------------
 group :production do
@@ -56,6 +58,8 @@ group :development, :test do
 end
 
 group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
   gem "listen", ">= 3.0.5", "< 3.2"
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem "web-console", ">= 3.3.0"
