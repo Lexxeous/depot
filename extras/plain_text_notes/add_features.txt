@@ -2,14 +2,30 @@
 
   [EASY]
     * Rubocop everything.
-    * Fix "Sorry translation not available." error message.
-    * Put a hidden link directing to the "/admin" page
+      * App
+        * Controllers DONE-ISH
+        * Helpers DONE
+        * Jobs DONE
+        * Mailers DONE
+        * Models DONE-ISH
+        * Views DONE-ISH
+      * Bin
+      * Config
+      * DB
+      * Doc
+      * Lib
+      * Scripts
+      * Test
+      * Root Files
+    * Fix "Sorry translation not available." Rubocop Info in "application_controller.rb"
+    * Fix "ensure_not_referenced_by_any_line_item" Rubocop Info in "product.rb"
+    * Fix "Bare backslash only allowed before newline." Rubocop Error in "who_bought.atom.builder"
     * Convert html.erb files to html.haml...cuz HTML sucks compared to HAML.
-    * Make a scaffold for faqs, news, and contact.
-      1: Create proper links for each in "app/views/layouts/application.html.erb".
 
   [MEDIUM]
     * Make a proper README.
+    * Make a scaffold for faqs, news, and contact.
+      1: Create proper links for each in "app/views/layouts/application.html.erb".
     * Try to find ways to expand the functionality of the application.
     * Finish converting from English to Spanish on all pages.
       1: One in particular is the "/login" page.

@@ -1,5 +1,6 @@
-class OrderMailer < ApplicationMailer
+# frozen_string_literal: true
 
+class OrderMailer < ApplicationMailer
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
@@ -8,7 +9,7 @@ class OrderMailer < ApplicationMailer
   def received(order)
     @greeting = "Hi"
     @order = order
-    mail to: order.email, subject: 'Your Pragmatic Store Order Confirmation!'
+    mail to: order.email, subject: "Your Pragmatic Store Order Confirmation!"
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml

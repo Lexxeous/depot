@@ -2,7 +2,7 @@ AllCops:
   TargetRubyVersion: 2.4.1
   Exclude:
     - 'vendor/**/*'
-    - 'test/dummy/db/schema.rb'
+    - 'db/schema.rb'
     - 'node_modules/**/*'
 
 Metrics/LineLength:
@@ -12,7 +12,16 @@ Metrics/MethodLength:
   Max: 20
 
 Metrics/AbcSize:
-  Enabled: false
+  Max: 30
+
+Metrics/ParameterLists:
+  Exclude:
+    - 'app/forms/*.rb'
+  Enabled: true
+
+Metrics/BlockLength:
+  Exclude:
+    - '*.gemspec'
 
 Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
@@ -23,11 +32,11 @@ Layout/MultilineMethodCallIndentation:
 Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
 
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
-
 Layout/DotPosition:
   EnforcedStyle: trailing
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
 
 Style/TrailingCommaInArguments:
   # If `comma`, the cop requires a comma after the last argument, but only for
@@ -46,6 +55,7 @@ Style/TrailingCommaInHashLiteral:
 
 Style/MutableConstant:
   Enabled: false
+
 Style/Documentation:
   Enabled: false
 
@@ -58,15 +68,9 @@ Style/PercentLiteralDelimiters:
     '%r': '{}'
     '%w': '()'
     '%W': '()'
+
 Style/EmptyMethod:
   Enabled: false
+
 Lint/AmbiguousBlockAssociation:
   Enabled: false
-Metrics/ParameterLists:
-  Exclude:
-    - 'app/forms/*.rb'
-  Enabled: true
-
-Metrics/BlockLength:
-  Exclude:
-    - '*.gemspec'

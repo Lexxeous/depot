@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #---
 # Excerpted from "Agile Web Development with Rails 5",
 # published by The Pragmatic Bookshelf.
@@ -6,28 +8,29 @@
 # We make no guarantees that this code is fit for any purpose.
 # Visit http://www.pragmaticprogrammer.com/titles/rails5 for more book information.
 #---
-require 'builder'
-require 'active_record'
- 
+require "builder"
+require "active_record"
+
 ActiveRecord::Base.establish_connection(
-  adapter: 'sqlite3',
-  database: 'db/development.sqlite3')
- 
+  adapter: "sqlite3",
+  database: "db/development.sqlite3",
+)
+
 class Product < ActiveRecord::Base
 end
- 
+
 class StoreApp
-  def call(env)
-    x = Builder::XmlMarkup.new :indent=>2
- 
+  def call(_env)
+    x = Builder::XmlMarkup.new indent: 2
+
     x.declare! :DOCTYPE, :html
     x.html do
       x.head do
-        x.title 'Pragmatic Bookshelf'
+        x.title "Pragmatic Bookshelf"
       end
       x.body do
-        x.h1 'Pragmatic Bookshelf'
- 
+        x.h1 "Pragmatic Bookshelf"
+
         Product.all.each do |product|
           x.h2 product.title
           x << "      #{product.description}\n"
@@ -35,9 +38,9 @@ class StoreApp
         end
       end
     end
- 
+
     response = Rack::Response.new(x.target!)
-    response['Content-Type'] = 'text/html'
+    response["Content-Type"] = "text/html"
     response.finish
   end
 end

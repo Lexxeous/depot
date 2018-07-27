@@ -1,10 +1,12 @@
-require 'rubygems'
-require 'bundler/setup'
+# frozen_string_literal: true
 
-require './app/store'
- 
+require "rubygems"
+require "bundler/setup"
+
+require "./app/store"
+
 use Rack::ShowExceptions
- 
-map '/store' do
+
+map "/store" do
   run StoreApp.new
 end
