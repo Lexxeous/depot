@@ -2,25 +2,27 @@
 
   [EASY]
     * Rubocop everything.
-      * App
-        * Controllers DONE-ISH
-        * Helpers DONE
-        * Jobs DONE
-        * Mailers DONE
-        * Models DONE-ISH
-        * Views DONE-ISH
-      * Bin
-      * Config
-      * DB
-      * Doc
-      * Lib
-      * Scripts
-      * Test
-      * Root Files
+      * app
+        * controllers DONE-ISH
+        * helpers DONE
+        * jobs DONE
+        * mailers DONE
+        * models DONE-ISH
+        * views DONE-ISH
+      * bin DONE
+      * config DONE
+      * db DONE
+      * doc DONE
+      * lib DONE
+      * scripts DONE
+      * test
+      * Root Files DONE
     * Fix "Sorry translation not available." Rubocop Info in "application_controller.rb"
     * Fix "ensure_not_referenced_by_any_line_item" Rubocop Info in "product.rb"
     * Fix "Bare backslash only allowed before newline." Rubocop Error in "who_bought.atom.builder"
+    * Fix "Prefer Each over For." Rubocop Error in "db_schema_migrations.rake"
     * Convert html.erb files to html.haml...cuz HTML sucks compared to HAML.
+    * Implement gem "Faker" for "seeds.rb"
 
   [MEDIUM]
     * Make a proper README.
@@ -39,3 +41,4 @@
     * Make Phusion Passenger and Apache devprod stuff work.
     * Address ERROR: Subscription class not found: "ProductsChannel" when starting server.
       1: Referring to "ActionCable.server.broadcast".
+    * Update all pages to be mobile friendly.

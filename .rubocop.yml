@@ -1,9 +1,10 @@
 AllCops:
   TargetRubyVersion: 2.4.1
   Exclude:
-    - 'vendor/**/*'
-    - 'db/schema.rb'
-    - 'node_modules/**/*'
+    - "vendor/**/*"
+    - "db/schema.rb"
+    - "db/migrate/*"
+    - "node_modules/**/*"
 
 Metrics/LineLength:
   Max: 120
@@ -16,12 +17,12 @@ Metrics/AbcSize:
 
 Metrics/ParameterLists:
   Exclude:
-    - 'app/forms/*.rb'
+    - "app/forms/*.rb"
   Enabled: true
 
 Metrics/BlockLength:
   Exclude:
-    - '*.gemspec'
+    - "*.gemspec"
 
 Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
@@ -63,11 +64,11 @@ Style/PercentLiteralDelimiters:
   Enabled: true
   PreferredDelimiters:
     default: ()
-    '%i': '()'
-    '%I': '()'
-    '%r': '{}'
-    '%w': '()'
-    '%W': '()'
+    "%i": "()"
+    "%I": "()"
+    "%r": "{}"
+    "%w": "()"
+    "%W": "()"
 
 Style/EmptyMethod:
   Enabled: false

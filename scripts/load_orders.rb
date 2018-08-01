@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #---
 # Excerpted from "Agile Web Development with Rails 5",
 # published by The Pragmatic Bookshelf.
@@ -9,6 +11,6 @@
 Order.transaction do
   (1..100).each do |i|
     Order.create(name: "Customer #{i}", address: "#{i} Main Street",
-      email: "customer-#{i}@example.com", pay_type: "Check")
+                 email: "customer-#{i}@example.com", pay_type: "Check")
   end
 end

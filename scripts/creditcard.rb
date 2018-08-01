@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #---
 # Excerpted from "Agile Web Development with Rails 5",
 # published by The Pragmatic Bookshelf.
@@ -8,13 +10,13 @@
 #---
 require "active_merchant/billing/rails"
 credit_card = ActiveMerchant::Billing::CreditCard.new(
-	first_name: 'Jon',
-  last_name:  'Doe',
-  number:     '5466 1603 2231 9813',
-  month:      '8', 
-  year:       '2020',
-  brand: 			'bogus',
-  verification_value:  '367' 
+  first_name: "Jon",
+  last_name:  "Doe",
+  number:     "5466 1603 2231 9813",
+  month:      "8",
+  year:       "2020",
+  brand:       "bogus",
+  verification_value:  "367",
 )
 
 puts "Is #{credit_card.number} valid?  #{credit_card.valid?}"
