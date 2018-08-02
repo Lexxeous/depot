@@ -1,4 +1,6 @@
-require 'test_helper'
+# frozen_string_literal: true
+
+require "test_helper"
 
 class OrdersControllerTest < ActionDispatch::IntegrationTest
   setup do
@@ -17,10 +19,16 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create order" do
-    assert_difference('Order.count') do
-      post orders_url, params: { order: { address: @order.address, email: @order.email, name: @order.name, pay_type: @order.pay_type } }
+    assert_difference("Order.count") do
+      post orders_url, params: {
+        order: {
+          address: @order.address,
+          email: @order.email,
+          name: @order.name,
+          pay_type: @order.pay_type,
+        },
+      }
     end
-
     assert_redirected_to store_index_url
   end
 
@@ -35,12 +43,19 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update order" do
-    patch order_url(@order), params: { order: { address: @order.address, email: @order.email, name: @order.name, pay_type: @order.pay_type } }
+    patch order_url(@order), params: {
+      order: {
+        address: @order.address,
+        email: @order.email,
+        name: @order.name,
+        pay_type: @order.pay_type,
+      },
+    }
     assert_redirected_to order_url(@order)
   end
 
   test "should destroy order" do
-    assert_difference('Order.count', -1) do
+    assert_difference("Order.count", -1) do
       delete order_url(@order)
     end
 
@@ -50,6 +65,6 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
   test "requres item in cart" do
     get new_order_url
     assert_redirected_to store_index_path
-    assert_equal flash[:notice], 'Your cart is empty.'
+    assert_equal flash[:notice], "Your cart is empty."
   end
 end

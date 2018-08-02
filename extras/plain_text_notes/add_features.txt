@@ -15,12 +15,14 @@
       * doc DONE
       * lib DONE
       * scripts DONE
-      * test
+      * test DONE-ISH
       * Root Files DONE
     * Fix "Sorry translation not available." Rubocop Info in "application_controller.rb"
     * Fix "ensure_not_referenced_by_any_line_item" Rubocop Info in "product.rb"
     * Fix "Bare backslash only allowed before newline." Rubocop Error in "who_bought.atom.builder"
-    * Fix "Prefer Each over For." Rubocop Error in "db_schema_migrations.rake"
+    * Fix "Prefer Each over For." Rubocop Info in "db_schema_migrations.rake"
+    * Fix "Use nested module/class definitions" Rubocop Info in "test_helper.rb"
+    * Fix "Metrics/BlockLength" Rubocop Info in "user_stories_test.rb"
     * Convert html.erb files to html.haml...cuz HTML sucks compared to HAML.
     * Implement gem "Faker" for "seeds.rb"
 
@@ -42,3 +44,5 @@
     * Address ERROR: Subscription class not found: "ProductsChannel" when starting server.
       1: Referring to "ActionCable.server.broadcast".
     * Update all pages to be mobile friendly.
+    * Fix all tests.
+    * Write new useful tests.
