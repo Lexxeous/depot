@@ -13,6 +13,8 @@ ruby "2.5.0"
 gem "activemerchant"
 # Use ActiveModel has_secure_password
 gem "bcrypt", "~> 3.1.7"
+# Most recent version of bundler
+gem "bundler"
 # Use Capistrano for deployment
 gem "capistrano-rails", group: :development
 # Use CoffeeScript for .coffee assets and views
