@@ -29,6 +29,8 @@ gem "jquery-rails"
 gem "jquery-ui-rails"
 # Use Kaminari for pagination framework
 gem "kaminari"
+# Was missing from vendor/cache
+gem "libv8"
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem "mini_racer"
 # Use pry for debugging
