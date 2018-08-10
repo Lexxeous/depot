@@ -7,14 +7,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-# Declare Ruby Version
-ruby "2.5.0"
 # Use Active Merchant to handle CC
 gem "activemerchant"
 # Use ActiveModel has_secure_password
 gem "bcrypt", "~> 3.1.7"
-# Most recent version of bundler
-gem "bundler"
 # Use Capistrano for deployment
 gem "capistrano-rails", group: :development
 # Use CoffeeScript for .coffee assets and views
@@ -29,8 +25,6 @@ gem "jquery-rails"
 gem "jquery-ui-rails"
 # Use Kaminari for pagination framework
 gem "kaminari"
-# Was missing from vendor/cache
-gem "libv8"
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem "mini_racer"
 # Use pry for debugging
