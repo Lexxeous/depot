@@ -1,0 +1,382 @@
+/* line 7, /Users/alex/Desktop/depot/app/assets/stylesheets/carts.scss */
+.carts .item_price, .carts .total_line, #side #cart .item_price, #side #cart .total_line {
+  text-align: right;
+}
+/* line 12, /Users/alex/Desktop/depot/app/assets/stylesheets/carts.scss */
+.carts .total_line .total_cell, #side #cart .total_line .total_cell {
+  font-weight: bold;
+  border-top: 1px solid #595;
+}
+/* line 7, /Users/alex/Desktop/depot/app/assets/stylesheets/products.scss */
+.products table {
+  border-collapse: collapse;
+}
+/* line 11, /Users/alex/Desktop/depot/app/assets/stylesheets/products.scss */
+.products h1 {
+  margin: 0;
+  padding-bottom: 0.5em;
+  font: 200% sans-serif;
+  color: black;
+  border-bottom: 1px dotted #77D;
+}
+
+/* line 21, /Users/alex/Desktop/depot/app/assets/stylesheets/products.scss */
+table tr td {
+  padding: 5px;
+  vertical-align: top;
+  height: 15px;
+}
+
+/* line 29, /Users/alex/Desktop/depot/app/assets/stylesheets/products.scss */
+.list_image {
+  width: 96px;
+  hight: 112px;
+}
+
+/* line 36, /Users/alex/Desktop/depot/app/assets/stylesheets/products.scss */
+.list_description {
+  width: 60%;
+}
+/* line 39, /Users/alex/Desktop/depot/app/assets/stylesheets/products.scss */
+.list_description dl {
+  margin: 0;
+}
+/* line 43, /Users/alex/Desktop/depot/app/assets/stylesheets/products.scss */
+.list_description dt {
+  color: #77D;
+  font-weight: bold;
+  font-size: larger;
+}
+/* line 49, /Users/alex/Desktop/depot/app/assets/stylesheets/products.scss */
+.list_description dd {
+  margin: 0;
+}
+
+/* line 55, /Users/alex/Desktop/depot/app/assets/stylesheets/products.scss */
+.list_actions {
+  font-size: x-small;
+  text-align: right;
+  padding-left: lem;
+}
+
+/* line 72, /Users/alex/Desktop/depot/app/assets/stylesheets/products.scss */
+.list_line_odd, .list_line_even {
+  overflow: auto;
+  margin-top: 1em;
+  border-bottom: 1px dotted #77D;
+  min-height: 100px;
+}
+
+/* line 80, /Users/alex/Desktop/depot/app/assets/stylesheets/products.scss */
+.price {
+  font-weight: bold;
+}
+/* line 1, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/alex/Desktop/depot/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 7, /Users/alex/Desktop/depot/app/assets/stylesheets/store.scss */
+.store h1 {
+  margin: 0;
+  padding-bottom: 0.5em;
+  font: 200% sans-serif;
+  color: black;
+  border-bottom: 1px dotted #77D;
+}
+
+/* An entry in the store catalog */
+/* line 18, /Users/alex/Desktop/depot/app/assets/stylesheets/store.scss */
+.entry {
+  overflow: auto;
+  margin-top: 1em;
+  border-bottom: 1px dotted #77D;
+  min-height: 100px;
+}
+
+/* line 26, /Users/alex/Desktop/depot/app/assets/stylesheets/store.scss */
+img {
+  width: 80px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  position: absolute;
+}
+
+/* line 34, /Users/alex/Desktop/depot/app/assets/stylesheets/store.scss */
+h3 {
+  font-size: 120%;
+  font-family: sans-serif;
+  margin-left: 100px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  color: #77D;
+}
+
+/* line 44, /Users/alex/Desktop/depot/app/assets/stylesheets/store.scss */
+p, div.price_line {
+  margin-left: 100px;
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+}
+/* line 50, /Users/alex/Desktop/depot/app/assets/stylesheets/store.scss */
+p form, p div, div.price_line form, div.price_line div {
+  display: inline;
+}
+
+/* line 56, /Users/alex/Desktop/depot/app/assets/stylesheets/store.scss */
+.price {
+  color: #77D;
+  font-weight: bold;
+  margin-right: 3em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+*/
+/* line 18, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+body, body > p, body > ol, body > ul, body > td {
+  margin: 8px !important;
+}
+
+/* line 20, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+.locale {
+  float: right;
+  margin: -0.25em 0.1em;
+}
+
+/* line 28, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+.depot_form fieldset {
+  background: #efe;
+}
+/* line 32, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+.depot_form fieldset legend {
+  color: #dfd;
+  background: #141;
+  font-family: sans-serif;
+  padding: 0.2em 1em;
+}
+/* line 40, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+.depot_form fieldset div {
+  margin-bottom: 0.3em;
+}
+/* line 48, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+.depot_form form label {
+  width: 5em;
+  float: left;
+  text-align: right;
+  padding-top: 0.2em;
+  margin-right: 0.1em;
+  display: block;
+}
+/* line 58, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+.depot_form form select, .depot_form form textarea, .depot_form form input {
+  margin-left: 0.5em;
+}
+/* line 62, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+.depot_form form .submit {
+  margin-left: 4em;
+}
+/* line 66, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+.depot_form form br {
+  display: none;
+}
+
+/* line 73, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+#banner {
+  position: relative;
+  min-height: 40px;
+  background: #9c9;
+  padding: 10px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #282;
+  text-align: center;
+}
+/* line 84, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+#banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 192px;
+}
+
+/* line 93, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+#notice {
+  color: #000 !important;
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+
+/* line 103, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+#notice:empty {
+  display: none;
+}
+
+/* line 108, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+#columns {
+  background: #141;
+  display: flex;
+}
+/* line 113, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+#columns #main {
+  padding: 1em;
+  background: white;
+  flex: 1;
+}
+/* line 120, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+#columns #side {
+  padding: 1em 2em;
+  background: #141;
+}
+/* line 125, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+#columns #side form, #columns #side div {
+  display: inline;
+}
+/* line 130, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+#columns #side input {
+  font-size: small;
+}
+/* line 135, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+#columns #side #cart {
+  font-size: smaller;
+  color: white;
+}
+/* line 140, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+#columns #side #cart table {
+  border-top: 1px dotted #595;
+  border-bottom: 1px dotted #595;
+  margin-bottom: 10px;
+}
+/* line 148, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+#columns #side ul {
+  padding: 0;
+}
+/* line 152, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+#columns #side ul li {
+  list-style: none;
+}
+/* line 156, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+#columns #side ul li a {
+  color: #bfb;
+  font-size: small;
+}
+
+@media all and (max-width: 800px) {
+  /* line 168, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+  #columns {
+    flex-direction: column-reverse;
+  }
+}
+@media all and (max-width: 500px) {
+  /* line 176, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+  #banner {
+    height: 1em;
+  }
+
+  /* line 181, /Users/alex/Desktop/depot/app/assets/stylesheets/application.scss */
+  #banner.title {
+    display: none;
+  }
+}
