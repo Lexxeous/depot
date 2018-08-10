@@ -27,6 +27,8 @@
     * Implement gem "Faker" for "seeds.rb"
 
   [MEDIUM]
+    * Add "Logged in as:" persist to every webpage
+      1: Also a dropdown menu for "Logout" & "Change User"
     * Make a proper README.
     * Make a scaffold for faqs, news, and contact.
       1: Create proper links for each in "app/views/layouts/application.html.erb".

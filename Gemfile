@@ -7,6 +7,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Declare Ruby Version
+ruby "2.5.0"
 # Use Active Merchant to handle CC
 gem "activemerchant"
 # Use ActiveModel has_secure_password
@@ -39,8 +41,6 @@ gem "redis"
 gem "rvm-capistrano", group: :development
 # Use SCSS for stylesheets
 gem "sass-rails", "~> 5.0"
-# Use sqlite3 as the database for Active Record
-gem "sqlite3"
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem "turbolinks", "~> 5"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -49,7 +49,8 @@ gem "tzinfo-data", platforms: %i(mingw mswin x64_mingw jruby)
 gem "uglifier", ">= 1.3.0"
 
 group :production do
-  gem "mysql2", "~> 0.4.0"
+  gem "pg"
+  gem "rails_12factor"
 end
 
 group :development, :test do
@@ -58,6 +59,8 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 2.13"
   gem "selenium-webdriver"
+  # Use sqlite3 as the database for Active Record
+  gem "sqlite3"
 end
 
 group :development do
