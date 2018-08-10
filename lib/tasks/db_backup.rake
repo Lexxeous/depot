@@ -1,5 +1,11 @@
 # frozen_string_literal: true
 
+begin
+  require 'minitest/autorun'
+rescue LoadError => e
+  raise e unless ENV['RAILS_ENV'] == "production"
+end
+
 namespace :db do
   desc "Backup the production database"
   task backup: :environment do

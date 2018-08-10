@@ -1,5 +1,11 @@
 # frozen_string_literal: true
 
+begin
+  require 'minitest/autorun'
+rescue LoadError => e
+  raise e unless ENV['RAILS_ENV'] == "production"
+end
+
 def mig_dates
   ActiveRecord::Base.connection.select_values("select * from schema_migrations").sort
 end
