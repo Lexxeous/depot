@@ -46,6 +46,10 @@ gem "tzinfo-data", platforms: %i(mingw mswin x64_mingw jruby)
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier", ">= 1.3.0"
 
+gem "nokogiri", ">= 1.8.5"
+gem "loofah", ">= 2.2.3"
+gem "rack", ">= 2.0.6"
+
 group :production do
   gem "pg"
   gem "rails_12factor"
